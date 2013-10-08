@@ -8,7 +8,7 @@ APP.ACTUAL_NOTE = 'actual_note'
 // LOCAL STORAGE
 
 APP.Storage.set = function(key, value){
-	if(typeof value == 'object'){
+	 if(typeof value == 'object'){
 		localStorage[key] = JSON.stringify(value)
 	}else{
 		localStorage[key] = value
@@ -166,12 +166,12 @@ APP.initialize = function(){
 				interval = setInterval(function(){
 					if( video.HAVE_ENOUGH_DATA ){
 						clearInterval(interval)
-							var width = video.videoWidth,
-								height = video.videoHeight
-							for(var i=0; i<4; i++){
-								APP.elems.videoCanvas[0].width = width
-								APP.elems.videoCanvas[0].height = height
-							}
+						var width = video.videoWidth,
+							height = video.videoHeight
+
+						APP.elems.videoCanvas[0].width = width
+						APP.elems.videoCanvas[0].height = height
+
 						APP.snapshot()
 					}
 				}, 100)
