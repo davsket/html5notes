@@ -1,0 +1,26 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+// @import "compass/reset";
+
+#note-content{
+	width: 500px;
+	height: 400px;
+	border: 1px dashed gray;
+	overflow: auto;
+}
+
+#camera-view{
+	display: none;
+}
+
+#video-canvas{
+	display: none;
+}
+
+.captured{
+	width: 200px;
+	height: auto; 
+}

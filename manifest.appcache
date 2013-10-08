@@ -1,0 +1,13 @@
+CACHE MANIFEST 
+#Cache version 1
+
+CACHE:
+
+#Styles
+stylesheets/screen.css
+
+#Scripts
+bower_components/jquery/jquery.min.js
+
+NETWORK:
+*

@@ -1,0 +1,22 @@
+<!doctype html>
+<html manifest="manifest.appcache">
+	<head>
+		<title>HMTL5Notes</title>
+		<link rel="stylesheet" href="stylesheets/screen.css">
+	</head>
+	<body>
+		<div class="controls">
+			<select id="notes">
+				<option value="-1">-- selecciona una nota --</option>
+				<option value="new">agregar nueva</option>
+			</select>
+			<button id="capture-camera">capturar camara</button>
+		</div>
+		<video autoplay id="camera-view"></video>
+		<canvas id="video-canvas"></canvas>
+		<h1 id="note-name"></h1>
+		<div contenteditable="true" id="note-content"></div>
+		<script src="bower_components/jquery/jquery.min.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
